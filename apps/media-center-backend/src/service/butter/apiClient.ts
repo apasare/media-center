@@ -54,7 +54,7 @@ export class ButterApiClient {
         const response = await axios(options);
         return response.data;
       } catch (error) {
-        if (!error.response) {
+        if (axios.isAxiosError(error) && !error.response) {
           continue;
         }
         throw error;
