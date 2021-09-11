@@ -68,7 +68,7 @@ function App() {
           </Route>
 
           <Route path="/">
-            <Redirect to="/movies" />
+            <Redirect to="/torrents" />
           </Route>
         </Switch>
       </main>

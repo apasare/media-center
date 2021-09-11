@@ -5,5 +5,12 @@
   "license": "MIT",
   "workspaces": [
     "apps/*"
-  ]
+  ],
+  "scripts": {
+    "postinstall": "patch-package"
+  },
+  "dependencies": {
+    "patch-package": "^6.4.7",
+    "postinstall-postinstall": "^2.1.0"
+  }
 }

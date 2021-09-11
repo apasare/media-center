@@ -1,0 +1,13 @@
+diff --git a/node_modules/webtorrent/lib/file-stream.js b/node_modules/webtorrent/lib/file-stream.js
+index e7dee68..3f4783c 100644
+--- a/node_modules/webtorrent/lib/file-stream.js
++++ b/node_modules/webtorrent/lib/file-stream.js
+@@ -34,7 +34,7 @@ class FileStream extends stream.Readable {
+     this._notifying = false
+     this._criticalLength = Math.min((1024 * 1024 / pieceLength) | 0, 2)
+ 
+-    this._torrent.select(this._startPiece, this._endPiece, true, () => {
++    this._torrent.select(this._startPiece, this._endPiece, 100, () => {
+       this._notify()
+     })
+ 
