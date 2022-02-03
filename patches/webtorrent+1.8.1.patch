@@ -1,8 +1,8 @@
 diff --git a/node_modules/webtorrent/lib/file-stream.js b/node_modules/webtorrent/lib/file-stream.js
-index e7dee68..3f4783c 100644
+index a3682b1..a517f85 100644
 --- a/node_modules/webtorrent/lib/file-stream.js
 +++ b/node_modules/webtorrent/lib/file-stream.js
-@@ -34,7 +34,7 @@ class FileStream extends stream.Readable {
+@@ -36,7 +36,7 @@ class FileStream extends stream.Readable {
      this._notifying = false
      this._criticalLength = Math.min((1024 * 1024 / pieceLength) | 0, 2)
  

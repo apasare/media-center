@@ -48,7 +48,7 @@ export class Subtitles {
       season,
       episode,
     });
-    if (lang && subtitles[lang]) {
+    if (lang && !Array.isArray(lang) && subtitles[lang]) {
       const subtitleResponse = await axios(subtitles[lang].utf8, {
         responseType: "stream",
       });
